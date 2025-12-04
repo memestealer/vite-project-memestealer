@@ -1,0 +1,107 @@
+:root {
+  --dark4: #202225;
+  --dark2: #292b2f;
+  --light: #fbfbfb;
+  --light2: white;
+  --dark3: white;
+  --light3: black;
+  --dark: #2f3136;
+  --light4: #f3f3f4;
+
+  /* Intentions */
+  --primary: var(--dark);
+  --secondary: var(--dark2);
+  --tertiary: var(--dark3);
+  --quartary: var(--dark4);
+}
+
+.cool {
+  --primary: var(--dark);
+  --secondary: var(--dark2);
+  --tertiary: var(--dark3);
+  --quartary: var(--dark4);
+}
+
+.warm {
+  --primary: var(--light);
+  --secondary: var(--light2);
+  --tertiary: var(--light3);
+  --quartary: var(--light4);
+}
+
+.hero {
+  background-color: var(--primary);
+}
+
+.main {
+  background-color: var(--secondary);
+  height: 90vh;
+}
+h1 {
+  color: var(--tertiary);
+  font-family: "genshin";
+  font-size: 3rem;
+}
+h2 {
+  color: var(--secondary);
+  font-family: "genshin";
+  font-size: 3rem;
+}
+.card-description {
+  color: var(--primary);
+  font-family: "genshin";
+}
+body {
+  background-color: var(--quartary);
+}
+.btn {
+  position: fixed;
+  top: 20px;
+  right: 20px; 
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "genshin";
+  font-weight: bold;
+}
+.container {
+  background-color: var(--primary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 30px auto;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 425px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--tertiary);
+}
+.card-img {
+  max-width: 100%;
+  max-height: 200px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "genshin";
+  src: url("app/src/HY Wenhei (zh-cn).ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
